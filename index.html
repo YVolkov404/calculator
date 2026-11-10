@@ -3,26 +3,38 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+            integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <link rel="stylesheet" href="src/style.css" />
         <title>Calculator</title>
     </head>
     <body>
         <div class="container">
             <div class="display"></div>
-            <div class="blocks-wrapper">
+            <div class="blocks-wrapper anonymous-pro-bold">
                 <div class="block">
-                    <button type="button">ac</button>
-                    <button type="button">ce</button>
+                    <button class="font-size" type="button">ac</button>
+                    <button class="font-size" type="button">ce</button>
                     <button type="button">%</button>
                     <button type="button">/</button>
                 </div>
                 <div class="block">
                     <button type="button">7</button>
-                    <button type="button">8</butto>
+                    <button type="button">8</button>
                     <button type="button">9</button>
                     <button type="button">*</button>
-                </di`v>
+                </div>
                 <div class="block">
                     <button type="button">4</button>
                     <button type="button">5</button>
@@ -38,7 +50,7 @@
                 <div class="block">
                     <button type="button">0</button>
                     <button type="button">.</button>
-                    <button type="button">=</button>
+                    <button class="square-type" type="button">=</button>
                 </div>
             </div>
         </div>

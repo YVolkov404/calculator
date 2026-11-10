@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write index.html \"src/**/*.{js,css}\"",
+    "format:check": "prettier --check index.html \"src/**/*.{js,css}\""
   },
   "devDependencies": {
+    "prettier": "^3.6.2",
     "vite": "^8.3.6"
   }
 }

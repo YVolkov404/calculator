@@ -1,0 +1,63 @@
+.anonymous-pro-bold {
+    font-family: 'Anonymous Pro', monospace;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container {
+    background-color: #242038;
+    border-radius: 15px;
+    left: 50%;
+    margin: 0 auto;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 495px;
+}
+
+.display {
+    background-color: #f7ece1;
+    border-radius: 15px;
+    height: 200px;
+    margin-bottom: 25px;
+    padding: 25px 0;
+}
+
+.blocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+button {
+    align-items: center;
+    background-color: #f7ece1;
+    border: none;
+    border-radius: 50px;
+    color: #242038;
+    display: flex;
+    font-size: initial;
+    font-size: 85px;
+    font-weight: 700;
+    height: 100px;
+    justify-content: center;
+    padding: 0;
+    width: 100px;
+}
+
+.font-size {
+    font-size: 70px;
+}
+
+.square-type {
+    border-radius: 25px;
+    font-size: 54px;
+    width: 215px;
+}

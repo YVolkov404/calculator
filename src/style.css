@@ -1,3 +1,9 @@
+:root {
+    --primary: #242038;
+    --secondary: #f7ece1;
+    --tertiary: #da3e52;
+}
+
 .anonymous-pro-bold {
     font-family: 'Anonymous Pro', monospace;
     font-style: normal;
@@ -5,7 +11,7 @@
 }
 
 .container {
-    background-color: #242038;
+    background-color: var(--primary);
     border-radius: 15px;
     left: 50%;
     margin: 0 auto;
@@ -17,7 +23,7 @@
 }
 
 .display {
-    background-color: #f7ece1;
+    background-color: var(--secondary);
     border-radius: 15px;
     height: 200px;
     margin-bottom: 25px;
@@ -38,26 +44,74 @@
 
 button {
     align-items: center;
-    background-color: #f7ece1;
+    background-color: var(--secondary);
     border: none;
     border-radius: 50px;
-    color: #242038;
+    color: var(--primary);
     display: flex;
-    font-size: initial;
     font-size: 85px;
     font-weight: 700;
+    letter-spacing: -0.5rem;
     height: 100px;
     justify-content: center;
     padding: 0;
     width: 100px;
+    box-shadow: 3px 4px 1px 0px var(--tertiary);
+    transition: all 0.1s ease;
 }
 
-.font-size {
-    font-size: 70px;
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
 }
 
 .square-type {
     border-radius: 25px;
-    font-size: 54px;
+    font-size: 94px;
     width: 215px;
+}
+
+.line-height {
+    align-items: baseline;
+    letter-spacing: -0.7rem;
+    line-height: 5.5rem;
+}
+
+.font-size {
+    font-size: 70px;
+    letter-spacing: -0.4rem;
+}
+
+.color {
+    color: var(--tertiary);
+}
+
+@media screen and (max-width: 495px) {
+    .container {
+        width: 375px;
+        padding: 15px;
+    }
+
+    .display {
+        height: 150px;
+    }
+
+    button {
+        width: 75px;
+        height: 75px;
+        font-size: 65px;
+    }
+
+    .square-type {
+        width: 165px;
+        font-size: 65px;
+    }
+
+    .line-height {
+        line-height: 4.2rem;
+    }
+
+    .font-size {
+        font-size: 65px;
+    }
 }

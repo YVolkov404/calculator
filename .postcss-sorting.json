@@ -6,6 +6,6 @@
     "at-rules",
     "rules"
   ],
-  "properties-order": "alphabetical",
+  "properties-order": ["content", "display", "position", "top", "right", "bottom", "left", "z-index", "flex-direction", "flex-wrap", "justify-content", "align-content", "align-items", "gap", "width", "height", "margin", "padding", "background-color", "border", "border-radius", "color", "font-family", "font-size", "font-style", "font-weight", "text-align", "line-height", "letter-spacing", "text-decoration", "box-shadow", "transform", "transition"],
   "unspecified-properties-position": "bottom"
 }

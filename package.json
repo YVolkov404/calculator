@@ -7,10 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "format": "prettier --write index.html \"src/**/*.{js,css}\"",
+    "format": "npm run sort:css && prettier --write index.html \"src/**/*.{js,css}\"",
+    "sort:css": "postcss src/style.css --replace --no-map",
     "format:check": "prettier --check index.html \"src/**/*.{js,css}\""
   },
   "devDependencies": {
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "postcss-sorting": "^9.1.0",
     "prettier": "^3.6.2",
     "vite": "^8.3.6"
   }

@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <link
@@ -20,41 +21,65 @@
         <title>Calculator</title>
     </head>
     <body>
-        <div class="container">
-            <div class="display"></div>
-            <div class="blocks-wrapper anonymous-pro-bold">
-                <div class="block">
-                    <button class="color font-size line-height" type="button">ac</button>
-                    <button class="color font-size line-height" type="button">ce</button>
-                    <button class="font-size" type="button">%</button>
-                    <button class="font-size" type="button">/</button>
+        <div class="wrapper">
+            <div class="theme-switcher">
+                <label for="slider" class="switcher">
+                    <input id="slider" type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div id="container">
+                <div class="display">
+                    <div class="display-top anonymous-pro-regular"></div>
+                    <div class="display-bottom anonymous-pro-bold"></div>
                 </div>
-                <div class="block">
-                    <button type="button">7</button>
-                    <button type="button">8</butto>
-                    <button type="button">9</button>
-                    <button class="line-height" type="button">*</button>
-                </div>
-                <div class="block">
-                    <button type="button">4</button>
-                    <button type="button">5</button>
-                    <button type="button">6</button>
-                    <button class="line-height" type="button">-</button>
-                </div>
-                <div class="block">
-                    <button type="button">1</button>
-                    <button type="button">2</button>
-                    <button type="button">3</button>
-                    <button class="line-height" type="button">+</button>
-                </div>
-                <div class="block">
-                    <button type="button">0</button>
-                    <button type="button">.</button>
-                    <button class="line-height square-type" type="button">=</button>
+                <div class="blocks-wrapper anonymous-pro-bold">
+                    <div class="block">
+                        <button
+                            class="color font-size line-height js-ac"
+                            type="button"
+                        >
+                            ac
+                        </button>
+                        <button
+                            class="color font-size line-height js-ce"
+                            type="button"
+                        >
+                            ce
+                        </button>
+                        <button class="font-size" type="button">%</button>
+                        <button class="font-size" type="button">/</button>
+                    </div>
+                    <div class="block">
+                        <button type="button" value="7">7</button>
+                        <button type="button" value="8">8</button>
+                        <button type="button" value="9">9</button>
+                        <button class="line-height" type="button">*</button>
+                    </div>
+                    <div class="block">
+                        <button type="button" value="4">4</button>
+                        <button type="button" value="5">5</button>
+                        <button type="button" value="6">6</button>
+                        <button class="line-height" type="button">-</button>
+                    </div>
+                    <div class="block">
+                        <button type="button" value="1">1</button>
+                        <button type="button" value="2">2</button>
+                        <button type="button" value="3">3</button>
+                        <button class="line-height" type="button">+</button>
+                    </div>
+                    <div class="block">
+                        <button type="button" value="0">0</button>
+                        <button type="button">.</button>
+                        <button class="line-height square-type" type="button">
+                            =
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <script type="module" src="src/main.js"></script>
+        <script type="module" src="src/light-theme.js"></script>
     </body>
 </html>
